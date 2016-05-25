@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="home">
   <head>
     <title>8bitreid</title>
     <meta charset="utf-8">
@@ -13,54 +13,23 @@
     <script src="./bootstrap-3.3.6-dist/js/jquery-2.2.0.js"></script>
     <!-- javascript -->
     <script src="./bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+    <!-- angularJS -->
+    <script src="./angular-1.5.5/angular.js"></script>
+    <script type="text/javascript" src="./app/components/app.js"></script>
+
     <style type="text/css">
       body {
         padding-top: 70px;
       }
     </style>
   </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="icon/8bitreidLogo.gif" alt="brand" width="25px" height="auto" align="middle"/>
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li class="active">
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="resume.html">Resume</a>
-            </li>
-            <li>
-              <a href="http://www.github.com/8bitreid" target="_blank">GitHub/8bitreid</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <body ng-controller="PageController as pageCtrl">
+    <div ng-include="'nav-menu.html'"></div>
+    <home-page></home-page>
+    <resume-page></resume-page>
 
-    <div class="container">
-      <div class="jumbotron">
-      <h2>Reid Mewborne</h2>
-      <p>
-        Welcome to my digital resume page.  You can find my projects on <a href="http://www.github.com/8bitreid" target="_blank"/> GitHub.</p>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
 
-        </div>
 
-      </div>
-    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
