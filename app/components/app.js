@@ -1,10 +1,6 @@
 (function(){
   var app = angular.module('home',[]);
 
-  app.controller('HomeController', function(){
-    this.name = content;
-  })
-
   app.controller('PageController', function(){
     this.tab = 1;
 
@@ -15,10 +11,6 @@
       return this.tab === checkTab;
     };
   })
-
-  var content = {
-    text: 'Reid Mewborne'
-  }
 
   app.directive('resumePage', function(){
     return{

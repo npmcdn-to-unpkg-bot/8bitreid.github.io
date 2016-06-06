@@ -10,7 +10,7 @@
         <img src="icon/8bitreidLogo.gif" alt="brand" width="25px" height="auto" align="middle"/>
       </a>
     </div>
-    <div class="collapse navbar-collapse" ng-controller="PageController as pageCtrl">
+    <div class="collapse navbar-collapse" >
       <ul class="nav navbar-nav">
         <li ng-class="{active: pageCtrl.isSelected(1)}">
           <a href ng-click="pageCtrl.selectTab(1)">Home</a>
@@ -24,6 +24,7 @@
         <li>
           <a href="http://www.github.com/8bitreid" target="_blank">GitHub/8bitreid</a>
         </li>
+        <!-- <li>{{pageCtrl.tab}}</li> -->
       </ul>
     </div>
   </div>
